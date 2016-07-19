@@ -21,6 +21,30 @@ static UILabel *testLabel(NSString *text, CGFloat fontSize)
 
     return label;
 }
+static UITextField *testTextField(NSString *text, CGFloat fontSize)
+{
+    UITextField *textField = nil;
+    if (text && fontSize > 0) {
+        textField = [[UITextField alloc] initWithFrame:CGRectZero];
+        textField.translatesAutoresizingMaskIntoConstraints = NO;
+        textField.text = text;
+        textField.font = [UIFont systemFontOfSize:fontSize];
+    }
+
+    return textField;
+}
+static UITextView *testTextView(NSString *text, CGFloat fontSize)
+{
+    UITextView *textView = nil;
+    if (text && fontSize > 0) {
+        textView = [[UITextView alloc] initWithFrame:CGRectZero];
+        textView.translatesAutoresizingMaskIntoConstraints = NO;
+        textView.text = text;
+        textView.font = [UIFont systemFontOfSize:fontSize];
+    }
+
+    return textView;
+}
 
 @interface BONTextAlignmentConstraintTestCase : BONBaseTestCase
 
@@ -189,5 +213,95 @@ static UILabel *testLabel(NSString *text, CGFloat fontSize)
                                                             toItem:right
                                                          attribute:BONConstraintAttributeBottom]);
 }
+#pragma mark - Font KVO
+- (void)testObservesFirstLabelFont
+{
+    UILabel *left = testLabel(@"left", 17.0);
+    UILabel *right = testLabel(@"right", 50.0);
 
+    BONTextAlignmentConstraint *constraint = [BONTextAlignmentConstraint constraintWithItem:left
+                                                                                  attribute:BONConstraintAttributeXHeight
+                                                                                  relatedBy:NSLayoutRelationEqual
+                                                                                     toItem:right
+                                                                                  attribute:BONConstraintAttributeCapHeight];
+    CGFloat firstConstant = constraint.constant;
+    [left setFont:[UIFont systemFontOfSize:30.0]];
+    CGFloat secondConstant = constraint.constant;
+    XCTAssertNotEqual(firstConstant, secondConstant);
+}
+- (void)testObservesSecondLabelFont
+{
+    UILabel *left = testLabel(@"left", 17.0);
+    UILabel *right = testLabel(@"right", 50.0);
+
+    BONTextAlignmentConstraint *constraint = [BONTextAlignmentConstraint constraintWithItem:left
+                                                                                  attribute:BONConstraintAttributeXHeight
+                                                                                  relatedBy:NSLayoutRelationEqual
+                                                                                     toItem:right
+                                                                                  attribute:BONConstraintAttributeCapHeight];
+    CGFloat firstConstant = constraint.constant;
+    [right setFont:[UIFont systemFontOfSize:30.0]];
+    CGFloat secondConstant = constraint.constant;
+    XCTAssertNotEqual(firstConstant, secondConstant);
+}
+- (void)testObservesFirstTextFieldFont
+{
+    UITextField *left = testTextField(@"left", 17.0);
+    UITextField *right = testTextField(@"right", 50.0);
+
+    BONTextAlignmentConstraint *constraint = [BONTextAlignmentConstraint constraintWithItem:left
+                                                                                  attribute:BONConstraintAttributeXHeight
+                                                                                  relatedBy:NSLayoutRelationEqual
+                                                                                     toItem:right
+                                                                                  attribute:BONConstraintAttributeCapHeight];
+    CGFloat firstConstant = constraint.constant;
+    [left setFont:[UIFont systemFontOfSize:30.0]];
+    CGFloat secondConstant = constraint.constant;
+    XCTAssertNotEqual(firstConstant, secondConstant);
+}
+- (void)testObservesSecondTextFieldFont
+{
+    UITextField *left = testTextField(@"left", 17.0);
+    UITextField *right = testTextField(@"right", 50.0);
+
+    BONTextAlignmentConstraint *constraint = [BONTextAlignmentConstraint constraintWithItem:left
+                                                                                  attribute:BONConstraintAttributeXHeight
+                                                                                  relatedBy:NSLayoutRelationEqual
+                                                                                     toItem:right
+                                                                                  attribute:BONConstraintAttributeCapHeight];
+    CGFloat firstConstant = constraint.constant;
+    [right setFont:[UIFont systemFontOfSize:30.0]];
+    CGFloat secondConstant = constraint.constant;
+    XCTAssertNotEqual(firstConstant, secondConstant);
+}
+- (void)testObservesFirstTextViewFont
+{
+    UITextView *left = testTextView(@"left", 17.0);
+    UITextView *right = testTextView(@"right", 50.0);
+
+    BONTextAlignmentConstraint *constraint = [BONTextAlignmentConstraint constraintWithItem:left
+                                                                                  attribute:BONConstraintAttributeXHeight
+                                                                                  relatedBy:NSLayoutRelationEqual
+                                                                                     toItem:right
+                                                                                  attribute:BONConstraintAttributeCapHeight];
+    CGFloat firstConstant = constraint.constant;
+    [left setFont:[UIFont systemFontOfSize:30.0]];
+    CGFloat secondConstant = constraint.constant;
+    XCTAssertNotEqual(firstConstant, secondConstant);
+}
+- (void)testObservesSecondTextViewFont
+{
+    UITextView *left = testTextView(@"left", 17.0);
+    UITextView *right = testTextView(@"right", 50.0);
+
+    BONTextAlignmentConstraint *constraint = [BONTextAlignmentConstraint constraintWithItem:left
+                                                                                  attribute:BONConstraintAttributeXHeight
+                                                                                  relatedBy:NSLayoutRelationEqual
+                                                                                     toItem:right
+                                                                                  attribute:BONConstraintAttributeCapHeight];
+    CGFloat firstConstant = constraint.constant;
+    [right setFont:[UIFont systemFontOfSize:30.0]];
+    CGFloat secondConstant = constraint.constant;
+    XCTAssertNotEqual(firstConstant, secondConstant);
+}
 @end
