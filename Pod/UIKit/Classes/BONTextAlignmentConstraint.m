@@ -214,18 +214,21 @@ NSLayoutAttribute requiredLayoutAttributeForBONConstraintAttribute(BONConstraint
 
 - (void)setUpObservers
 {
-    NSString *firstItemFontKeyPath = [@[
-        NSStringFromSelector(@selector(firstItem)),
-        NSStringFromSelector(@selector(font)),
-    ] componentsJoinedByString:@"."];
+    BONGeneric(NSArray, NSString *)*keyPaths = @[ NSStringFromSelector(@selector(font)), NSStringFromSelector(@selector(attributedText)) ];
+    for (NSString *keyPath in keyPaths) {
+        NSString *firstItemFontKeyPath = [@[
+            NSStringFromSelector(@selector(firstItem)),
+            keyPath,
+        ] componentsJoinedByString:@"."];
 
-    NSString *secondItemFontKeyPath = [@[
-        NSStringFromSelector(@selector(secondItem)),
-        NSStringFromSelector(@selector(font)),
-    ] componentsJoinedByString:@"."];
+        NSString *secondItemFontKeyPath = [@[
+            NSStringFromSelector(@selector(secondItem)),
+            keyPath,
+        ] componentsJoinedByString:@"."];
 
-    [self addObserver:self forKeyPath:firstItemFontKeyPath options:0 context:kBONTextAlignmentConstraintContext];
-    [self addObserver:self forKeyPath:secondItemFontKeyPath options:0 context:kBONTextAlignmentConstraintContext];
+        [self addObserver:self forKeyPath:firstItemFontKeyPath options:0 context:kBONTextAlignmentConstraintContext];
+        [self addObserver:self forKeyPath:secondItemFontKeyPath options:0 context:kBONTextAlignmentConstraintContext];
+    }
 
     // Call Observer method once initially
     [self updateConstant];
@@ -233,18 +236,21 @@ NSLayoutAttribute requiredLayoutAttributeForBONConstraintAttribute(BONConstraint
 
 - (void)tearDownObservers
 {
-    NSString *firstItemFontKeyPath = [@[
-        NSStringFromSelector(@selector(firstItem)),
-        NSStringFromSelector(@selector(font)),
-    ] componentsJoinedByString:@"."];
+    BONGeneric(NSArray, NSString *)*keyPaths = @[ NSStringFromSelector(@selector(font)), NSStringFromSelector(@selector(attributedText)) ];
+    for (NSString *keyPath in keyPaths) {
+        NSString *firstItemFontKeyPath = [@[
+            NSStringFromSelector(@selector(firstItem)),
+            keyPath,
+        ] componentsJoinedByString:@"."];
 
-    NSString *secondItemFontKeyPath = [@[
-        NSStringFromSelector(@selector(secondItem)),
-        NSStringFromSelector(@selector(font)),
-    ] componentsJoinedByString:@"."];
+        NSString *secondItemFontKeyPath = [@[
+            NSStringFromSelector(@selector(secondItem)),
+            keyPath,
+        ] componentsJoinedByString:@"."];
 
-    [self removeObserver:self forKeyPath:firstItemFontKeyPath context:kBONTextAlignmentConstraintContext];
-    [self removeObserver:self forKeyPath:secondItemFontKeyPath context:kBONTextAlignmentConstraintContext];
+        [self removeObserver:self forKeyPath:firstItemFontKeyPath context:kBONTextAlignmentConstraintContext];
+        [self removeObserver:self forKeyPath:secondItemFontKeyPath context:kBONTextAlignmentConstraintContext];
+    }
 }
 
 - (void)updateConstant

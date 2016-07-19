@@ -213,8 +213,8 @@ static UITextView *testTextView(NSString *text, CGFloat fontSize)
                                                             toItem:right
                                                          attribute:BONConstraintAttributeBottom]);
 }
-#pragma mark - Font KVO
-- (void)testObservesFirstLabelFont
+#pragma mark - Font/AttributedText KVO
+- (void)testObservesLabelAttributedText
 {
     UILabel *left = testLabel(@"left", 17.0);
     UILabel *right = testLabel(@"right", 50.0);
@@ -225,11 +225,16 @@ static UITextView *testTextView(NSString *text, CGFloat fontSize)
                                                                                      toItem:right
                                                                                   attribute:BONConstraintAttributeCapHeight];
     CGFloat firstConstant = constraint.constant;
-    [left setFont:[UIFont systemFontOfSize:30.0]];
+    [left setAttributedText:[[NSAttributedString alloc] initWithString:@"left"
+                                                            attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:24.0]}]];
     CGFloat secondConstant = constraint.constant;
     XCTAssertNotEqual(firstConstant, secondConstant);
+    [right setAttributedText:[[NSAttributedString alloc] initWithString:@"right"
+                                                             attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:36.0]}]];
+    CGFloat thirdConstant = constraint.constant;
+    XCTAssertNotEqual(secondConstant, thirdConstant);
 }
-- (void)testObservesSecondLabelFont
+- (void)testObservesLabelFont
 {
     UILabel *left = testLabel(@"left", 17.0);
     UILabel *right = testLabel(@"right", 50.0);
@@ -240,11 +245,14 @@ static UITextView *testTextView(NSString *text, CGFloat fontSize)
                                                                                      toItem:right
                                                                                   attribute:BONConstraintAttributeCapHeight];
     CGFloat firstConstant = constraint.constant;
-    [right setFont:[UIFont systemFontOfSize:30.0]];
+    [left setFont:[UIFont systemFontOfSize:24.0]];
     CGFloat secondConstant = constraint.constant;
     XCTAssertNotEqual(firstConstant, secondConstant);
+    [right setFont:[UIFont systemFontOfSize:36.0]];
+    CGFloat thirdConstant = constraint.constant;
+    XCTAssertNotEqual(secondConstant, thirdConstant);
 }
-- (void)testObservesFirstTextFieldFont
+- (void)testObservesTextFieldAttributedText
 {
     UITextField *left = testTextField(@"left", 17.0);
     UITextField *right = testTextField(@"right", 50.0);
@@ -255,11 +263,16 @@ static UITextView *testTextView(NSString *text, CGFloat fontSize)
                                                                                      toItem:right
                                                                                   attribute:BONConstraintAttributeCapHeight];
     CGFloat firstConstant = constraint.constant;
-    [left setFont:[UIFont systemFontOfSize:30.0]];
+    [left setAttributedText:[[NSAttributedString alloc] initWithString:@"left"
+                                                            attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:24.0]}]];
     CGFloat secondConstant = constraint.constant;
     XCTAssertNotEqual(firstConstant, secondConstant);
+    [right setAttributedText:[[NSAttributedString alloc] initWithString:@"right"
+                                                             attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:36.0]}]];
+    CGFloat thirdConstant = constraint.constant;
+    XCTAssertNotEqual(secondConstant, thirdConstant);
 }
-- (void)testObservesSecondTextFieldFont
+- (void)testObservesTextFieldFont
 {
     UITextField *left = testTextField(@"left", 17.0);
     UITextField *right = testTextField(@"right", 50.0);
@@ -270,11 +283,14 @@ static UITextView *testTextView(NSString *text, CGFloat fontSize)
                                                                                      toItem:right
                                                                                   attribute:BONConstraintAttributeCapHeight];
     CGFloat firstConstant = constraint.constant;
-    [right setFont:[UIFont systemFontOfSize:30.0]];
+    [left setFont:[UIFont systemFontOfSize:24.0]];
     CGFloat secondConstant = constraint.constant;
     XCTAssertNotEqual(firstConstant, secondConstant);
+    [right setFont:[UIFont systemFontOfSize:36.0]];
+    CGFloat thirdConstant = constraint.constant;
+    XCTAssertNotEqual(secondConstant, thirdConstant);
 }
-- (void)testObservesFirstTextViewFont
+- (void)testObservesTextViewAttributedText
 {
     UITextView *left = testTextView(@"left", 17.0);
     UITextView *right = testTextView(@"right", 50.0);
@@ -285,11 +301,16 @@ static UITextView *testTextView(NSString *text, CGFloat fontSize)
                                                                                      toItem:right
                                                                                   attribute:BONConstraintAttributeCapHeight];
     CGFloat firstConstant = constraint.constant;
-    [left setFont:[UIFont systemFontOfSize:30.0]];
+    [left setAttributedText:[[NSAttributedString alloc] initWithString:@"left"
+                                                            attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:24.0]}]];
     CGFloat secondConstant = constraint.constant;
     XCTAssertNotEqual(firstConstant, secondConstant);
+    [right setAttributedText:[[NSAttributedString alloc] initWithString:@"right"
+                                                             attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:36.0]}]];
+    CGFloat thirdConstant = constraint.constant;
+    XCTAssertNotEqual(secondConstant, thirdConstant);
 }
-- (void)testObservesSecondTextViewFont
+- (void)testObservesTextViewFont
 {
     UITextView *left = testTextView(@"left", 17.0);
     UITextView *right = testTextView(@"right", 50.0);
@@ -300,8 +321,11 @@ static UITextView *testTextView(NSString *text, CGFloat fontSize)
                                                                                      toItem:right
                                                                                   attribute:BONConstraintAttributeCapHeight];
     CGFloat firstConstant = constraint.constant;
-    [right setFont:[UIFont systemFontOfSize:30.0]];
+    [left setFont:[UIFont systemFontOfSize:24.0]];
     CGFloat secondConstant = constraint.constant;
     XCTAssertNotEqual(firstConstant, secondConstant);
+    [right setFont:[UIFont systemFontOfSize:36.0]];
+    CGFloat thirdConstant = constraint.constant;
+    XCTAssertNotEqual(secondConstant, thirdConstant);
 }
 @end
