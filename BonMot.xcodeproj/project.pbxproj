@@ -25,6 +25,14 @@
 		B91BD80F1D9C477E00F5D39B /* UIImage+BonMotUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = B91BD7FF1D9C477E00F5D39B /* UIImage+BonMotUtilities.h */; };
 		B91BD8101D9C477E00F5D39B /* UIImage+BonMotUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = B91BD8001D9C477E00F5D39B /* UIImage+BonMotUtilities.m */; };
 		B91BD8401D9C486400F5D39B /* BonMot_UIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B91BD83E1D9C486400F5D39B /* BonMot_UIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B91BD8451D9C493D00F5D39B /* BONTextAlignmentConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = B91BD81E1D9C479900F5D39B /* BONTextAlignmentConstraint.h */; };
+		B91BD8461D9C493D00F5D39B /* BONTextAlignmentConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B91BD81F1D9C479900F5D39B /* BONTextAlignmentConstraint.m */; };
+		B91BD8471D9C493D00F5D39B /* UILabel+BonMotUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = B91BD8201D9C479900F5D39B /* UILabel+BonMotUtilities.h */; };
+		B91BD8481D9C493D00F5D39B /* UILabel+BonMotUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = B91BD8211D9C479900F5D39B /* UILabel+BonMotUtilities.m */; };
+		B91BD8491D9C493D00F5D39B /* UITextField+BonMotUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = B91BD8221D9C479900F5D39B /* UITextField+BonMotUtilities.h */; };
+		B91BD84A1D9C493D00F5D39B /* UITextField+BonMotUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = B91BD8231D9C479900F5D39B /* UITextField+BonMotUtilities.m */; };
+		B91BD84B1D9C493D00F5D39B /* UITextView+BonMotUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = B91BD8241D9C479900F5D39B /* UITextView+BonMotUtilities.h */; };
+		B91BD84C1D9C493D00F5D39B /* UITextView+BonMotUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = B91BD8251D9C479900F5D39B /* UITextView+BonMotUtilities.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -189,6 +197,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B91BD8491D9C493D00F5D39B /* UITextField+BonMotUtilities.h in Headers */,
+				B91BD8451D9C493D00F5D39B /* BONTextAlignmentConstraint.h in Headers */,
+				B91BD84B1D9C493D00F5D39B /* UITextView+BonMotUtilities.h in Headers */,
+				B91BD8471D9C493D00F5D39B /* UILabel+BonMotUtilities.h in Headers */,
 				B91BD8401D9C486400F5D39B /* BonMot_UIKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,10 +255,12 @@
 				TargetAttributes = {
 					B91BD7E21D9C46D000F5D39B = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					B91BD83B1D9C486400F5D39B = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -304,6 +318,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B91BD8481D9C493D00F5D39B /* UILabel+BonMotUtilities.m in Sources */,
+				B91BD8461D9C493D00F5D39B /* BONTextAlignmentConstraint.m in Sources */,
+				B91BD84A1D9C493D00F5D39B /* UITextField+BonMotUtilities.m in Sources */,
+				B91BD84C1D9C493D00F5D39B /* UITextView+BonMotUtilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +438,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.raizlabs.BonMot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -437,6 +456,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.raizlabs.BonMot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -454,6 +474,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.raizlabs.BonMot-UIKit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -471,6 +492,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.raizlabs.BonMot-UIKit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
