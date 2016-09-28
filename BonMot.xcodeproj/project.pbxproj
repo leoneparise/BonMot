@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B91BD7E81D9C46D000F5D39B /* BonMot.h in Headers */ = {isa = PBXBuildFile; fileRef = B91BD7E61D9C46D000F5D39B /* BonMot.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B91BD8011D9C477E00F5D39B /* BONChain.h in Headers */ = {isa = PBXBuildFile; fileRef = B91BD7F11D9C477E00F5D39B /* BONChain.h */; };
+		B91BD8021D9C477E00F5D39B /* BONChain.m in Sources */ = {isa = PBXBuildFile; fileRef = B91BD7F21D9C477E00F5D39B /* BONChain.m */; };
+		B91BD8031D9C477E00F5D39B /* BONCompatibility.h in Headers */ = {isa = PBXBuildFile; fileRef = B91BD7F31D9C477E00F5D39B /* BONCompatibility.h */; };
+		B91BD8041D9C477E00F5D39B /* BONSpecial.h in Headers */ = {isa = PBXBuildFile; fileRef = B91BD7F41D9C477E00F5D39B /* BONSpecial.h */; };
+		B91BD8051D9C477E00F5D39B /* BONSpecial.m in Sources */ = {isa = PBXBuildFile; fileRef = B91BD7F51D9C477E00F5D39B /* BONSpecial.m */; };
+		B91BD8061D9C477E00F5D39B /* BONTag_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = B91BD7F61D9C477E00F5D39B /* BONTag_Private.h */; };
+		B91BD8071D9C477E00F5D39B /* BONTag.h in Headers */ = {isa = PBXBuildFile; fileRef = B91BD7F71D9C477E00F5D39B /* BONTag.h */; };
+		B91BD8081D9C477E00F5D39B /* BONTag.m in Sources */ = {isa = PBXBuildFile; fileRef = B91BD7F81D9C477E00F5D39B /* BONTag.m */; };
+		B91BD8091D9C477E00F5D39B /* BONText_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = B91BD7F91D9C477E00F5D39B /* BONText_Private.h */; };
+		B91BD80A1D9C477E00F5D39B /* BONText.h in Headers */ = {isa = PBXBuildFile; fileRef = B91BD7FA1D9C477E00F5D39B /* BONText.h */; };
+		B91BD80B1D9C477E00F5D39B /* BONText.m in Sources */ = {isa = PBXBuildFile; fileRef = B91BD7FB1D9C477E00F5D39B /* BONText.m */; };
+		B91BD80C1D9C477E00F5D39B /* BONTextable.h in Headers */ = {isa = PBXBuildFile; fileRef = B91BD7FC1D9C477E00F5D39B /* BONTextable.h */; };
+		B91BD80D1D9C477E00F5D39B /* NSAttributedString+BonMotUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = B91BD7FD1D9C477E00F5D39B /* NSAttributedString+BonMotUtilities.h */; };
+		B91BD80E1D9C477E00F5D39B /* NSAttributedString+BonMotUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = B91BD7FE1D9C477E00F5D39B /* NSAttributedString+BonMotUtilities.m */; };
+		B91BD80F1D9C477E00F5D39B /* UIImage+BonMotUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = B91BD7FF1D9C477E00F5D39B /* UIImage+BonMotUtilities.h */; };
+		B91BD8101D9C477E00F5D39B /* UIImage+BonMotUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = B91BD8001D9C477E00F5D39B /* UIImage+BonMotUtilities.m */; };
+		B91BD8401D9C486400F5D39B /* BonMot_UIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B91BD83E1D9C486400F5D39B /* BonMot_UIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B91BD7E31D9C46D000F5D39B /* BonMot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BonMot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B91BD7E61D9C46D000F5D39B /* BonMot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BonMot.h; sourceTree = "<group>"; };
+		B91BD7E71D9C46D000F5D39B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B91BD7F11D9C477E00F5D39B /* BONChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BONChain.h; sourceTree = "<group>"; };
+		B91BD7F21D9C477E00F5D39B /* BONChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BONChain.m; sourceTree = "<group>"; };
+		B91BD7F31D9C477E00F5D39B /* BONCompatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BONCompatibility.h; sourceTree = "<group>"; };
+		B91BD7F41D9C477E00F5D39B /* BONSpecial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BONSpecial.h; sourceTree = "<group>"; };
+		B91BD7F51D9C477E00F5D39B /* BONSpecial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BONSpecial.m; sourceTree = "<group>"; };
+		B91BD7F61D9C477E00F5D39B /* BONTag_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BONTag_Private.h; sourceTree = "<group>"; };
+		B91BD7F71D9C477E00F5D39B /* BONTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BONTag.h; sourceTree = "<group>"; };
+		B91BD7F81D9C477E00F5D39B /* BONTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BONTag.m; sourceTree = "<group>"; };
+		B91BD7F91D9C477E00F5D39B /* BONText_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BONText_Private.h; sourceTree = "<group>"; };
+		B91BD7FA1D9C477E00F5D39B /* BONText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BONText.h; sourceTree = "<group>"; };
+		B91BD7FB1D9C477E00F5D39B /* BONText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BONText.m; sourceTree = "<group>"; };
+		B91BD7FC1D9C477E00F5D39B /* BONTextable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BONTextable.h; sourceTree = "<group>"; };
+		B91BD7FD1D9C477E00F5D39B /* NSAttributedString+BonMotUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+BonMotUtilities.h"; sourceTree = "<group>"; };
+		B91BD7FE1D9C477E00F5D39B /* NSAttributedString+BonMotUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+BonMotUtilities.m"; sourceTree = "<group>"; };
+		B91BD7FF1D9C477E00F5D39B /* UIImage+BonMotUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BonMotUtilities.h"; sourceTree = "<group>"; };
+		B91BD8001D9C477E00F5D39B /* UIImage+BonMotUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BonMotUtilities.m"; sourceTree = "<group>"; };
+		B91BD81E1D9C479900F5D39B /* BONTextAlignmentConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BONTextAlignmentConstraint.h; sourceTree = "<group>"; };
+		B91BD81F1D9C479900F5D39B /* BONTextAlignmentConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BONTextAlignmentConstraint.m; sourceTree = "<group>"; };
+		B91BD8201D9C479900F5D39B /* UILabel+BonMotUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+BonMotUtilities.h"; sourceTree = "<group>"; };
+		B91BD8211D9C479900F5D39B /* UILabel+BonMotUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+BonMotUtilities.m"; sourceTree = "<group>"; };
+		B91BD8221D9C479900F5D39B /* UITextField+BonMotUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+BonMotUtilities.h"; sourceTree = "<group>"; };
+		B91BD8231D9C479900F5D39B /* UITextField+BonMotUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+BonMotUtilities.m"; sourceTree = "<group>"; };
+		B91BD8241D9C479900F5D39B /* UITextView+BonMotUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+BonMotUtilities.h"; sourceTree = "<group>"; };
+		B91BD8251D9C479900F5D39B /* UITextView+BonMotUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+BonMotUtilities.m"; sourceTree = "<group>"; };
+		B91BD83C1D9C486400F5D39B /* BonMot_UIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BonMot_UIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B91BD83E1D9C486400F5D39B /* BonMot_UIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BonMot_UIKit.h; sourceTree = "<group>"; };
+		B91BD83F1D9C486400F5D39B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B91BD7DF1D9C46D000F5D39B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B91BD8381D9C486400F5D39B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B91BD7D91D9C46D000F5D39B = {
+			isa = PBXGroup;
+			children = (
+				B91BD7EE1D9C473B00F5D39B /* Sources */,
+				B91BD7E51D9C46D000F5D39B /* BonMot */,
+				B91BD83D1D9C486400F5D39B /* BonMot_UIKit */,
+				B91BD7E41D9C46D000F5D39B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B91BD7E41D9C46D000F5D39B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B91BD7E31D9C46D000F5D39B /* BonMot.framework */,
+				B91BD83C1D9C486400F5D39B /* BonMot_UIKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B91BD7E51D9C46D000F5D39B /* BonMot */ = {
+			isa = PBXGroup;
+			children = (
+				B91BD7E61D9C46D000F5D39B /* BonMot.h */,
+				B91BD7E71D9C46D000F5D39B /* Info.plist */,
+			);
+			path = BonMot;
+			sourceTree = "<group>";
+		};
+		B91BD7EE1D9C473B00F5D39B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B91BD7F01D9C476100F5D39B /* BonMot_UIKit */,
+				B91BD7EF1D9C474100F5D39B /* BonMot */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		B91BD7EF1D9C474100F5D39B /* BonMot */ = {
+			isa = PBXGroup;
+			children = (
+				B91BD7F11D9C477E00F5D39B /* BONChain.h */,
+				B91BD7F21D9C477E00F5D39B /* BONChain.m */,
+				B91BD7F31D9C477E00F5D39B /* BONCompatibility.h */,
+				B91BD7F41D9C477E00F5D39B /* BONSpecial.h */,
+				B91BD7F51D9C477E00F5D39B /* BONSpecial.m */,
+				B91BD7F61D9C477E00F5D39B /* BONTag_Private.h */,
+				B91BD7F71D9C477E00F5D39B /* BONTag.h */,
+				B91BD7F81D9C477E00F5D39B /* BONTag.m */,
+				B91BD7F91D9C477E00F5D39B /* BONText_Private.h */,
+				B91BD7FA1D9C477E00F5D39B /* BONText.h */,
+				B91BD7FB1D9C477E00F5D39B /* BONText.m */,
+				B91BD7FC1D9C477E00F5D39B /* BONTextable.h */,
+				B91BD7FD1D9C477E00F5D39B /* NSAttributedString+BonMotUtilities.h */,
+				B91BD7FE1D9C477E00F5D39B /* NSAttributedString+BonMotUtilities.m */,
+				B91BD7FF1D9C477E00F5D39B /* UIImage+BonMotUtilities.h */,
+				B91BD8001D9C477E00F5D39B /* UIImage+BonMotUtilities.m */,
+			);
+			name = BonMot;
+			path = Pod/Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		B91BD7F01D9C476100F5D39B /* BonMot_UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				B91BD81E1D9C479900F5D39B /* BONTextAlignmentConstraint.h */,
+				B91BD81F1D9C479900F5D39B /* BONTextAlignmentConstraint.m */,
+				B91BD8201D9C479900F5D39B /* UILabel+BonMotUtilities.h */,
+				B91BD8211D9C479900F5D39B /* UILabel+BonMotUtilities.m */,
+				B91BD8221D9C479900F5D39B /* UITextField+BonMotUtilities.h */,
+				B91BD8231D9C479900F5D39B /* UITextField+BonMotUtilities.m */,
+				B91BD8241D9C479900F5D39B /* UITextView+BonMotUtilities.h */,
+				B91BD8251D9C479900F5D39B /* UITextView+BonMotUtilities.m */,
+			);
+			name = BonMot_UIKit;
+			path = Pod/UIKit/Classes;
+			sourceTree = "<group>";
+		};
+		B91BD83D1D9C486400F5D39B /* BonMot_UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				B91BD83E1D9C486400F5D39B /* BonMot_UIKit.h */,
+				B91BD83F1D9C486400F5D39B /* Info.plist */,
+			);
+			path = BonMot_UIKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B91BD7E01D9C46D000F5D39B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B91BD8031D9C477E00F5D39B /* BONCompatibility.h in Headers */,
+				B91BD8071D9C477E00F5D39B /* BONTag.h in Headers */,
+				B91BD80D1D9C477E00F5D39B /* NSAttributedString+BonMotUtilities.h in Headers */,
+				B91BD8061D9C477E00F5D39B /* BONTag_Private.h in Headers */,
+				B91BD80A1D9C477E00F5D39B /* BONText.h in Headers */,
+				B91BD8011D9C477E00F5D39B /* BONChain.h in Headers */,
+				B91BD80C1D9C477E00F5D39B /* BONTextable.h in Headers */,
+				B91BD8091D9C477E00F5D39B /* BONText_Private.h in Headers */,
+				B91BD80F1D9C477E00F5D39B /* UIImage+BonMotUtilities.h in Headers */,
+				B91BD8041D9C477E00F5D39B /* BONSpecial.h in Headers */,
+				B91BD7E81D9C46D000F5D39B /* BonMot.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B91BD8391D9C486400F5D39B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B91BD8401D9C486400F5D39B /* BonMot_UIKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B91BD7E21D9C46D000F5D39B /* BonMot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B91BD7EB1D9C46D000F5D39B /* Build configuration list for PBXNativeTarget "BonMot" */;
+			buildPhases = (
+				B91BD7DE1D9C46D000F5D39B /* Sources */,
+				B91BD7DF1D9C46D000F5D39B /* Frameworks */,
+				B91BD7E01D9C46D000F5D39B /* Headers */,
+				B91BD7E11D9C46D000F5D39B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BonMot;
+			productName = BonMot;
+			productReference = B91BD7E31D9C46D000F5D39B /* BonMot.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B91BD83B1D9C486400F5D39B /* BonMot_UIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B91BD8411D9C486400F5D39B /* Build configuration list for PBXNativeTarget "BonMot_UIKit" */;
+			buildPhases = (
+				B91BD8371D9C486400F5D39B /* Sources */,
+				B91BD8381D9C486400F5D39B /* Frameworks */,
+				B91BD8391D9C486400F5D39B /* Headers */,
+				B91BD83A1D9C486400F5D39B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BonMot_UIKit;
+			productName = BonMot_UIKit;
+			productReference = B91BD83C1D9C486400F5D39B /* BonMot_UIKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B91BD7DA1D9C46D000F5D39B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = com.raizlabs;
+				TargetAttributes = {
+					B91BD7E21D9C46D000F5D39B = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					B91BD83B1D9C486400F5D39B = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B91BD7DD1D9C46D000F5D39B /* Build configuration list for PBXProject "BonMot" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B91BD7D91D9C46D000F5D39B;
+			productRefGroup = B91BD7E41D9C46D000F5D39B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B91BD7E21D9C46D000F5D39B /* BonMot */,
+				B91BD83B1D9C486400F5D39B /* BonMot_UIKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B91BD7E11D9C46D000F5D39B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B91BD83A1D9C486400F5D39B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B91BD7DE1D9C46D000F5D39B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B91BD80B1D9C477E00F5D39B /* BONText.m in Sources */,
+				B91BD8021D9C477E00F5D39B /* BONChain.m in Sources */,
+				B91BD80E1D9C477E00F5D39B /* NSAttributedString+BonMotUtilities.m in Sources */,
+				B91BD8101D9C477E00F5D39B /* UIImage+BonMotUtilities.m in Sources */,
+				B91BD8051D9C477E00F5D39B /* BONSpecial.m in Sources */,
+				B91BD8081D9C477E00F5D39B /* BONTag.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B91BD8371D9C486400F5D39B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B91BD7E91D9C46D000F5D39B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B91BD7EA1D9C46D000F5D39B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B91BD7EC1D9C46D000F5D39B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BonMot/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.raizlabs.BonMot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B91BD7ED1D9C46D000F5D39B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BonMot/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.raizlabs.BonMot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B91BD8421D9C486400F5D39B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BonMot_UIKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raizlabs.BonMot-UIKit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B91BD8431D9C486400F5D39B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BonMot_UIKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raizlabs.BonMot-UIKit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B91BD7DD1D9C46D000F5D39B /* Build configuration list for PBXProject "BonMot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B91BD7E91D9C46D000F5D39B /* Debug */,
+				B91BD7EA1D9C46D000F5D39B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B91BD7EB1D9C46D000F5D39B /* Build configuration list for PBXNativeTarget "BonMot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B91BD7EC1D9C46D000F5D39B /* Debug */,
+				B91BD7ED1D9C46D000F5D39B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B91BD8411D9C486400F5D39B /* Build configuration list for PBXNativeTarget "BonMot_UIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B91BD8421D9C486400F5D39B /* Debug */,
+				B91BD8431D9C486400F5D39B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B91BD7DA1D9C46D000F5D39B /* Project object */;
+}
