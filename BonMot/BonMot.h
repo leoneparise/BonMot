@@ -17,7 +17,7 @@ FOUNDATION_EXPORT const unsigned char BonMotVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <BonMot/PublicHeader.h>
 
 #import <BonMot/BONText.h>
-#import <BonMot/BONChain.h
+#import <BonMot/BONChain.h>
 #import <BonMot/BONSpecial.h>
 #import <BonMot/UIImage+BonMotUtilities.h>
 #import <BonMot/BONTag.h>
