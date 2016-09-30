@@ -10,7 +10,7 @@
 		B91BD7E81D9C46D000F5D39B /* BonMot.h in Headers */ = {isa = PBXBuildFile; fileRef = B91BD7E61D9C46D000F5D39B /* BonMot.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B91BD8011D9C477E00F5D39B /* BONChain.h in Headers */ = {isa = PBXBuildFile; fileRef = B91BD7F11D9C477E00F5D39B /* BONChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B91BD8021D9C477E00F5D39B /* BONChain.m in Sources */ = {isa = PBXBuildFile; fileRef = B91BD7F21D9C477E00F5D39B /* BONChain.m */; };
-		B91BD8031D9C477E00F5D39B /* BONCompatibility.h in Headers */ = {isa = PBXBuildFile; fileRef = B91BD7F31D9C477E00F5D39B /* BONCompatibility.h */; };
+		B91BD8031D9C477E00F5D39B /* BONCompatibility.h in Headers */ = {isa = PBXBuildFile; fileRef = B91BD7F31D9C477E00F5D39B /* BONCompatibility.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B91BD8041D9C477E00F5D39B /* BONSpecial.h in Headers */ = {isa = PBXBuildFile; fileRef = B91BD7F41D9C477E00F5D39B /* BONSpecial.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B91BD8051D9C477E00F5D39B /* BONSpecial.m in Sources */ = {isa = PBXBuildFile; fileRef = B91BD7F51D9C477E00F5D39B /* BONSpecial.m */; };
 		B91BD8061D9C477E00F5D39B /* BONTag_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = B91BD7F61D9C477E00F5D39B /* BONTag_Private.h */; };
@@ -19,8 +19,8 @@
 		B91BD8091D9C477E00F5D39B /* BONText_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = B91BD7F91D9C477E00F5D39B /* BONText_Private.h */; };
 		B91BD80A1D9C477E00F5D39B /* BONText.h in Headers */ = {isa = PBXBuildFile; fileRef = B91BD7FA1D9C477E00F5D39B /* BONText.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B91BD80B1D9C477E00F5D39B /* BONText.m in Sources */ = {isa = PBXBuildFile; fileRef = B91BD7FB1D9C477E00F5D39B /* BONText.m */; };
-		B91BD80C1D9C477E00F5D39B /* BONTextable.h in Headers */ = {isa = PBXBuildFile; fileRef = B91BD7FC1D9C477E00F5D39B /* BONTextable.h */; };
-		B91BD80D1D9C477E00F5D39B /* NSAttributedString+BonMotUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = B91BD7FD1D9C477E00F5D39B /* NSAttributedString+BonMotUtilities.h */; };
+		B91BD80C1D9C477E00F5D39B /* BONTextable.h in Headers */ = {isa = PBXBuildFile; fileRef = B91BD7FC1D9C477E00F5D39B /* BONTextable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B91BD80D1D9C477E00F5D39B /* NSAttributedString+BonMotUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = B91BD7FD1D9C477E00F5D39B /* NSAttributedString+BonMotUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B91BD80E1D9C477E00F5D39B /* NSAttributedString+BonMotUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = B91BD7FE1D9C477E00F5D39B /* NSAttributedString+BonMotUtilities.m */; };
 		B91BD80F1D9C477E00F5D39B /* UIImage+BonMotUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = B91BD7FF1D9C477E00F5D39B /* UIImage+BonMotUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B91BD8101D9C477E00F5D39B /* UIImage+BonMotUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = B91BD8001D9C477E00F5D39B /* UIImage+BonMotUtilities.m */; };
